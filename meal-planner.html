@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meal Planner & Shopping List</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --bg:#ffffff; --soft:#f6f7f5;
+  --green:#157a4b; --green-soft:#e8f3ed; --amber:#b45309; --amber-soft:#fdf2e3;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Outfit",sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:20px 16px 90px}
+header h1{font-size:26px;margin:0 0 2px}
+header p{margin:0 0 16px;color:var(--muted);font-size:14px}
+
+/* Controls */
+.controls{position:sticky;top:0;background:var(--bg);z-index:20;padding:10px 0 12px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.ctl-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
+.ctl-row:last-child{margin-bottom:0}
+.ctl-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);width:72px;flex-shrink:0}
+.chip{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer;transition:background .15s,border-color .15s}
+.chip:hover{border-color:var(--green)}
+.chip.on{background:var(--green);border-color:var(--green);color:#fff;font-weight:600}
+.chip:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+
+/* Meal grid */
+.group-title{font-size:18px;margin:22px 0 10px;display:flex;align-items:baseline;gap:8px}
+.group-title small{color:var(--muted);font-weight:400;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;background:var(--bg);transition:border-color .15s,box-shadow .15s}
+.card.sel{border-color:var(--green);box-shadow:0 0 0 1px var(--green);background:var(--green-soft)}
+.card-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.card h3{margin:0;font-size:15px;line-height:1.3}
+.cal{background:var(--amber-soft);color:var(--amber);font-size:12px;font-weight:700;border-radius:6px;padding:2px 7px;white-space:nowrap;flex-shrink:0}
+.ptag{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--green)}
+.ings{margin:0;color:var(--muted);font-size:12.5px;line-height:1.45}
+.card-actions{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:6px}
+.pick{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;cursor:pointer;user-select:none}
+.pick input{width:17px;height:17px;accent-color:var(--green);cursor:pointer}
+.serv{display:none;align-items:center;gap:4px}
+.card.sel .serv{display:flex}
+.serv button{width:26px;height:26px;border:1px solid var(--line);background:var(--bg);border-radius:6px;font-size:15px;cursor:pointer;line-height:1}
+.serv button:hover{border-color:var(--green);color:var(--green)}
+.serv input{width:40px;text-align:center;border:1px solid var(--line);border-radius:6px;padding:4px 2px;font-size:13px}
+.serv .sl{font-size:11px;color:var(--muted)}
+.empty{color:var(--muted);padding:30px 0;text-align:center}
+
+/* Layout: meals + receipt */
+.layout{display:grid;grid-template-columns:1fr 300px;gap:24px;align-items:start}
+.receipt{position:sticky;top:96px;border:1px solid var(--line);border-radius:4px;background:var(--soft);padding:16px 14px;font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:13px}
+.receipt h2{font-family:ui-monospace,monospace;font-size:14px;letter-spacing:.12em;text-transform:uppercase;text-align:center;margin:0 0 4px}
+.receipt .sub{text-align:center;color:var(--muted);font-size:11px;margin:0 0 10px}
+.tear{border:none;border-top:2px dashed #c9cec7;margin:10px 0}
+.ritem{display:flex;justify-content:space-between;gap:10px;padding:2.5px 0}
+.ritem .q{white-space:nowrap;color:var(--green);font-weight:700}
+.rempty{color:var(--muted);text-align:center;padding:14px 0;font-size:12px}
+.rfoot{display:flex;gap:8px;margin-top:10px}
+.btn{flex:1;border:none;border-radius:8px;padding:9px 10px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn-go{background:var(--green);color:#fff}
+.btn-go:hover{background:#0f5e39}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.btn-ghost:hover{color:var(--ink)}
+.rcount{text-align:center;color:var(--muted);font-size:11px;margin-top:8px}
+
+/* Mobile drawer */
+.fab{display:none}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .receipt{display:none;position:fixed;left:0;right:0;bottom:0;top:auto;max-height:70vh;overflow:auto;border-radius:16px 16px 0 0;box-shadow:0 -6px 30px rgba(0,0,0,.18);z-index:40;margin:0}
+  .receipt.open{display:block}
+  .fab{display:flex;position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:50;background:var(--green);color:#fff;border:none;border-radius:999px;padding:12px 22px;font-size:14px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:pointer;gap:6px;align-items:center;font-family:inherit}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Meal Planner &amp; Shopping List</h1>
+  <p>Check meals, set servings, and build your grocery run.</p>
+</header>
+
+<div class="controls">
+  <div class="ctl-row"><span class="ctl-label">Group by</span><div id="fGroup"></div></div>
+  <div class="ctl-row"><span class="ctl-label">Meal</span><div id="fCat"></div></div>
+  <div class="ctl-row"><span class="ctl-label">Calories</span><div id="fCal"></div></div>
+  <div class="ctl-row"><span class="ctl-label">Protein</span><div id="fPro"></div></div>
+</div>
+
+<div class="layout">
+  <main id="meals"></main>
+  <aside class="receipt" id="receipt" aria-label="Shopping list">
+    <h2>Shopping List</h2>
+    <p class="sub">* * * checked meals * * *</p>
+    <hr class="tear">
+    <div id="rlist"><p class="rempty">Nothing checked yet.<br>Pick some meals to start.</p></div>
+    <hr class="tear">
+    <div class="rfoot">
+      <button class="btn btn-go" id="copyBtn">Copy list</button>
+      <button class="btn btn-ghost" id="clearBtn">Clear</button>
+    </div>
+    <p class="rcount" id="rcount"></p>
+  </aside>
+</div>
+</div>
+
+<button class="fab" id="fab" aria-expanded="false">Shopping list (<span id="fabN">0</span>)</button>
+
+<script>
+/* ============================================================
+   MEAL DATA — edit this block to add / change / remove meals.
+   Format per meal:
+   { name:"...", cat:"breakfast|lunch|dinner|snack", cal:###, pro:"protein tag",
+     ing:[[qty per serving, "unit", "ingredient"], ...] }
+   Units: "lb","oz","cup","tbsp","tsp","can","slice","clove","block","jar","scoop",
+   or "" for count items (eggs, tortillas, etc.)
+   ============================================================ */
+const MEALS=[
+// ---- BREAKFAST ----
+{name:"Sausage Egg Scramble Bowl",cat:"breakfast",cal:650,pro:"pork",ing:[[3,"","eggs"],[3,"oz","breakfast sausage"],[0.25,"cup","shredded cheddar"],[0.5,"","bell pepper"],[2,"","tortillas"]]},
+{name:"Greek Yogurt Power Bowl",cat:"breakfast",cal:600,pro:"eggs & dairy",ing:[[1,"cup","Greek yogurt"],[0.5,"cup","granola"],[2,"tbsp","peanut butter"],[1,"","banana"],[1,"tbsp","honey"]]},
+{name:"Steak & Egg Hash",cat:"breakfast",cal:750,pro:"steak",ing:[[5,"oz","sirloin steak"],[1,"cup","frozen diced potatoes"],[2,"","eggs"],[0.25,"","onion"],[0.25,"cup","shredded cheese"]]},
+{name:"Protein Oatmeal",cat:"breakfast",cal:620,pro:"eggs & dairy",ing:[[0.75,"cup","oats"],[1,"scoop","protein powder"],[2,"tbsp","peanut butter"],[0.5,"cup","blueberries"],[1,"cup","milk"]]},
+{name:"Breakfast Burritos",cat:"breakfast",cal:700,pro:"pork",ing:[[3,"","eggs"],[3,"slice","bacon"],[2,"","tortillas"],[0.25,"cup","shredded cheese"],[2,"tbsp","salsa"]]},
+{name:"Ham & Cheese Egg Muffins",cat:"breakfast",cal:600,pro:"pork",ing:[[3,"","eggs"],[3,"oz","diced ham"],[0.25,"cup","shredded cheddar"],[0.5,"","bell pepper"],[0.25,"cup","milk"]]},
+{name:"Ground Turkey Breakfast Skillet",cat:"breakfast",cal:680,pro:"turkey",ing:[[4,"oz","ground turkey"],[1,"cup","frozen diced potatoes"],[2,"","eggs"],[1,"cup","spinach"],[0.25,"cup","shredded cheese"]]},
+{name:"Bagel, Egg & Sausage Sandwich",cat:"breakfast",cal:720,pro:"pork",ing:[[1,"","bagel"],[2,"","eggs"],[2,"oz","breakfast sausage"],[1,"slice","American cheese"],[1,"tbsp","butter"]]},
+{name:"Cottage Cheese Protein Pancakes",cat:"breakfast",cal:630,pro:"eggs & dairy",ing:[[0.5,"cup","cottage cheese"],[2,"","eggs"],[0.5,"cup","oats"],[1,"","banana"],[2,"tbsp","maple syrup"]]},
+{name:"Chorizo Breakfast Tacos",cat:"breakfast",cal:700,pro:"pork",ing:[[3,"oz","chorizo"],[2,"","eggs"],[3,"","tortillas"],[0.25,"cup","shredded cheese"],[2,"tbsp","salsa"]]},
+// ---- LUNCH ----
+{name:"Chicken Caesar Wrap",cat:"lunch",cal:650,pro:"chicken",ing:[[4,"oz","rotisserie chicken"],[2,"cup","romaine"],[2,"tbsp","Caesar dressing"],[2,"tbsp","parmesan"],[1,"","tortillas"]]},
+{name:"Turkey Avocado Sandwich + Chips",cat:"lunch",cal:680,pro:"turkey",ing:[[4,"oz","deli turkey"],[0.5,"","avocado"],[2,"slice","bread"],[1,"slice","provolone"],[1,"oz","kettle chips"]]},
+{name:"Tuna Rice Bowl",cat:"lunch",cal:620,pro:"seafood",ing:[[1,"can","tuna"],[1,"cup","instant rice"],[1,"tbsp","mayo"],[1,"tsp","sriracha"],[0.5,"","cucumber"]]},
+{name:"Chicken Quesadillas",cat:"lunch",cal:720,pro:"chicken",ing:[[4,"oz","rotisserie chicken"],[2,"","tortillas"],[0.5,"cup","shredded cheese"],[2,"tbsp","salsa"],[2,"tbsp","sour cream"]]},
+{name:"Cold Soba Noodle Bowl",cat:"lunch",cal:640,pro:"chicken",ing:[[3,"oz","soba noodles"],[4,"oz","deli chicken"],[0.5,"","cucumber"],[1,"tbsp","soy sauce"],[1,"tsp","sesame oil"]]},
+{name:"BBQ Chicken Flatbread",cat:"lunch",cal:690,pro:"chicken",ing:[[4,"oz","rotisserie chicken"],[1,"","flatbread"],[2,"tbsp","BBQ sauce"],[0.5,"cup","mozzarella"],[0.25,"","red onion"]]},
+{name:"Ground Turkey Lettuce Wraps + Rice",cat:"lunch",cal:640,pro:"turkey",ing:[[4,"oz","ground turkey"],[4,"","romaine leaves"],[0.75,"cup","instant rice"],[1,"tbsp","soy sauce"],[1,"tbsp","hoisin sauce"]]},
+{name:"Steak Salad",cat:"lunch",cal:700,pro:"steak",ing:[[5,"oz","sirloin steak"],[3,"cup","spring mix"],[0.5,"cup","cherry tomatoes"],[2,"tbsp","blue cheese crumbles"],[2,"tbsp","ranch"]]},
+{name:"Chicken Rice Soup + Roll",cat:"lunch",cal:620,pro:"chicken",ing:[[4,"oz","rotisserie chicken"],[0.5,"cup","instant rice"],[2,"cup","chicken broth"],[1,"","carrot"],[1,"","dinner rolls"]]},
+{name:"Ham & Swiss Melt + Fruit",cat:"lunch",cal:660,pro:"pork",ing:[[4,"oz","deli ham"],[1,"slice","Swiss cheese"],[2,"slice","bread"],[1,"tbsp","butter"],[1,"cup","grapes"]]},
+// ---- DINNER ----
+{name:"Chicken Thighs & Rice",cat:"dinner",cal:850,pro:"chicken",ing:[[0.5,"lb","chicken thighs"],[0.75,"cup","jasmine rice"],[1,"cup","broccoli"],[2,"tbsp","soy sauce"],[2,"clove","garlic"],[1,"tbsp","honey"]]},
+{name:"Baked Chicken Thighs, Potatoes & Green Beans",cat:"dinner",cal:800,pro:"chicken",ing:[[0.5,"lb","chicken thighs"],[0.5,"lb","baby potatoes"],[1,"cup","green beans"],[1,"tbsp","olive oil"],[1,"tsp","Italian seasoning"]]},
+{name:"Ground Beef Burrito Bowls",cat:"dinner",cal:900,pro:"ground beef",ing:[[5,"oz","ground beef"],[1,"cup","instant rice"],[0.5,"can","black beans"],[0.25,"cup","shredded cheese"],[2,"tbsp","salsa"],[2,"tbsp","sour cream"]]},
+{name:"Salmon, Rice & Asparagus",cat:"dinner",cal:750,pro:"seafood",ing:[[6,"oz","salmon fillet"],[0.75,"cup","jasmine rice"],[6,"oz","asparagus"],[1,"tbsp","butter"],[0.5,"","lemon"]]},
+{name:"Pork Chops & Roasted Sweet Potatoes",cat:"dinner",cal:820,pro:"pork",ing:[[1,"","pork chops"],[1,"","sweet potatoes"],[1,"tbsp","olive oil"],[1,"tsp","brown sugar"],[1,"cup","broccoli"]]},
+{name:"Crispy Tofu Stir-Fry",cat:"dinner",cal:600,pro:"tofu",ing:[[0.5,"block","extra-firm tofu"],[0.75,"cup","instant rice"],[1.5,"cup","frozen stir-fry vegetables"],[2,"tbsp","soy sauce"],[1,"tbsp","cornstarch"],[1,"tsp","sesame oil"]]},
+{name:"Chicken Thigh Fajita Skillet",cat:"dinner",cal:880,pro:"chicken",ing:[[0.5,"lb","chicken thighs"],[1,"","bell pepper"],[0.5,"","onion"],[1,"tbsp","fajita seasoning"],[2,"","tortillas"],[0.25,"cup","shredded cheese"]]},
+{name:"Spaghetti with Meat Sauce",cat:"dinner",cal:950,pro:"ground beef",ing:[[5,"oz","ground beef"],[3,"oz","spaghetti"],[0.75,"cup","marinara"],[2,"tbsp","parmesan"],[2,"clove","garlic"]]},
+{name:"Ground Turkey Taco Night",cat:"dinner",cal:850,pro:"turkey",ing:[[5,"oz","ground turkey"],[3,"","taco shells"],[0.25,"cup","shredded cheese"],[1,"cup","lettuce"],[2,"tbsp","salsa"],[2,"tbsp","sour cream"]]},
+{name:"Sheet Pan Sausage & Veggies",cat:"dinner",cal:780,pro:"pork",ing:[[5,"oz","smoked sausage"],[0.5,"lb","baby potatoes"],[1,"","bell pepper"],[0.5,"","onion"],[1,"tbsp","olive oil"]]},
+{name:"Beef Stir-Fry",cat:"dinner",cal:820,pro:"steak",ing:[[5,"oz","sirloin steak"],[1.5,"cup","frozen stir-fry vegetables"],[0.75,"cup","instant rice"],[2,"tbsp","soy sauce"],[2,"clove","garlic"],[1,"tbsp","cornstarch"]]},
+{name:"Chicken Alfredo",cat:"dinner",cal:1000,pro:"chicken",ing:[[0.5,"lb","chicken thighs"],[3,"oz","fettuccine"],[0.5,"jar","alfredo sauce"],[2,"tbsp","parmesan"],[2,"clove","garlic"]]},
+{name:"Shrimp Tacos",cat:"dinner",cal:720,pro:"seafood",ing:[[5,"oz","shrimp"],[3,"","tortillas"],[1,"cup","coleslaw mix"],[2,"tbsp","ranch"],[0.5,"","lime"],[1,"tsp","taco seasoning"]]},
+{name:"Turkey Burgers & Sweet Potato Fries",cat:"dinner",cal:800,pro:"turkey",ing:[[5,"oz","ground turkey"],[1,"","burger buns"],[4,"oz","frozen sweet potato fries"],[1,"slice","cheddar"],[1,"","lettuce leaves"]]},
+{name:"Baked Ziti",cat:"dinner",cal:950,pro:"ground beef",ing:[[5,"oz","ground beef"],[3,"oz","ziti"],[0.75,"cup","marinara"],[0.5,"cup","mozzarella"],[0.25,"cup","ricotta"]]},
+{name:"Honey Garlic Tofu Bowls",cat:"dinner",cal:640,pro:"tofu",ing:[[0.5,"block","extra-firm tofu"],[0.75,"cup","jasmine rice"],[1,"tbsp","honey"],[2,"tbsp","soy sauce"],[2,"clove","garlic"],[1,"cup","frozen broccoli"]]},
+// ---- SNACKS ----
+{name:"Apple + Peanut Butter",cat:"snack",cal:280,pro:"other",ing:[[1,"","apple"],[2,"tbsp","peanut butter"]]},
+{name:"Cottage Cheese + Pineapple",cat:"snack",cal:220,pro:"eggs & dairy",ing:[[0.75,"cup","cottage cheese"],[0.5,"cup","pineapple chunks"]]},
+{name:"Trail Mix Handful",cat:"snack",cal:300,pro:"other",ing:[[0.25,"cup","almonds"],[2,"tbsp","raisins"],[1,"tbsp","chocolate chips"]]},
+{name:"Cheese Stick + Beef Jerky",cat:"snack",cal:230,pro:"other",ing:[[1,"","string cheese"],[1,"oz","beef jerky"]]},
+{name:"Greek Yogurt + Honey",cat:"snack",cal:200,pro:"eggs & dairy",ing:[[0.75,"cup","Greek yogurt"],[1,"tbsp","honey"]]},
+{name:"Hummus + Carrots + Pretzels",cat:"snack",cal:290,pro:"other",ing:[[0.25,"cup","hummus"],[1,"cup","baby carrots"],[1,"oz","pretzels"]]}
+];
+/* ================= END MEAL DATA ================= */
+
+const CATS=[["all","All"],["breakfast","Breakfast"],["lunch","Lunch"],["dinner","Dinner"],["snack","Snacks"]];
+const CALS=[["all","All"],["u600","Under 600"],["600-800","600–800"],["800-1000","800–1000"],["1000+","1000+"]];
+const PROS=[["all","All"],["chicken","Chicken"],["ground beef","Ground beef"],["steak","Steak"],["turkey","Turkey"],["pork","Pork"],["seafood","Seafood"],["tofu","Tofu"],["eggs & dairy","Eggs & dairy"],["other","Other"]];
+const GROUPS=[["cat","Meal type"],["cal","Calories"]];
+const CAT_LABEL={breakfast:"Breakfast",lunch:"Lunch",dinner:"Dinner",snack:"Snacks"};
+const CAL_BANDS=[["u600","Under 600 cal",c=>c<600],["600-800","600–800 cal",c=>c>=600&&c<800],["800-1000","800–1000 cal",c=>c>=800&&c<1000],["1000+","1000+ cal",c=>c>=1000]];
+
+let state={group:"cat",cat:"all",cal:"all",pro:"all"};
+let picks={}; // meal index -> servings
+
+function chipRow(el,opts,key){
+  el.innerHTML="";
+  opts.forEach(([v,label])=>{
+    const b=document.createElement("button");
+    b.className="chip"+(state[key]===v?" on":"");
+    b.textContent=label;
+    b.onclick=()=>{state[key]=v;chipRow(el,opts,key);renderMeals();};
+    el.appendChild(b);
+  });
+}
+
+function calBand(c){for(const [id,,fn] of CAL_BANDS){if(fn(c))return id;}return"u600";}
+
+function frac(q){
+  const whole=Math.floor(q),rem=+(q-whole).toFixed(3);
+  const map={0.25:"¼",0.5:"½",0.75:"¾",0.33:"⅓",0.333:"⅓",0.67:"⅔",0.667:"⅔"};
+  const f=map[rem];
+  if(rem===0)return String(whole);
+  if(f)return whole?whole+f:f;
+  return String(+q.toFixed(2));
+}
+
+function filtered(){
+  return MEALS.map((m,i)=>({...m,i})).filter(m=>
+    (state.cat==="all"||m.cat===state.cat)&&
+    (state.cal==="all"||calBand(m.cal)===state.cal)&&
+    (state.pro==="all"||m.pro===state.pro));
+}
+
+function renderMeals(){
+  const host=document.getElementById("meals");
+  host.innerHTML="";
+  const list=filtered();
+  if(!list.length){host.innerHTML='<p class="empty">No meals match these filters.</p>';return;}
+  let groups;
+  if(state.group==="cat"){
+    groups=CATS.slice(1).map(([v,label])=>[label,list.filter(m=>m.cat===v)]);
+  }else{
+    groups=CAL_BANDS.map(([id,label])=>[label,list.filter(m=>calBand(m.cal)===id)]);
+  }
+  groups.forEach(([label,meals])=>{
+    if(!meals.length)return;
+    const h=document.createElement("h2");
+    h.className="group-title";
+    h.innerHTML=label+' <small>'+meals.length+(meals.length===1?" meal":" meals")+"</small>";
+    host.appendChild(h);
+    const grid=document.createElement("div");grid.className="grid";
+    meals.forEach(m=>grid.appendChild(card(m)));
+    host.appendChild(grid);
+  });
+}
+
+function card(m){
+  const sel=picks[m.i]!==undefined;
+  const d=document.createElement("div");
+  d.className="card"+(sel?" sel":"");
+  d.innerHTML=`
+    <div class="card-top"><h3>${m.name}</h3><span class="cal">~${m.cal} cal</span></div>
+    <span class="ptag">${m.pro}</span>
+    <p class="ings">${m.ing.map(x=>x[2]).join(", ")}</p>
+    <div class="card-actions">
+      <label class="pick"><input type="checkbox" ${sel?"checked":""}> Add</label>
+      <div class="serv">
+        <button type="button" aria-label="Fewer servings">−</button>
+        <input type="number" min="1" max="20" value="${sel?picks[m.i]:1}" aria-label="Servings">
+        <button type="button" aria-label="More servings">+</button>
+        <span class="sl">serv</span>
+      </div>
+    </div>`;
+  const cb=d.querySelector("input[type=checkbox]");
+  const num=d.querySelector("input[type=number]");
+  cb.onchange=()=>{
+    if(cb.checked){picks[m.i]=parseInt(num.value)||1;d.classList.add("sel");}
+    else{delete picks[m.i];d.classList.remove("sel");}
+    renderList();
+  };
+  num.onchange=()=>{
+    let v=Math.max(1,Math.min(20,parseInt(num.value)||1));
+    num.value=v;
+    if(picks[m.i]!==undefined){picks[m.i]=v;renderList();}
+  };
+  const [minus,plus]=d.querySelectorAll(".serv button");
+  minus.onclick=()=>{num.value=Math.max(1,(parseInt(num.value)||1)-1);num.onchange();};
+  plus.onclick=()=>{num.value=Math.min(20,(parseInt(num.value)||1)+1);num.onchange();};
+  return d;
+}
+
+function buildList(){
+  const combined={};
+  for(const i in picks){
+    const m=MEALS[i],s=picks[i];
+    m.ing.forEach(([q,u,n])=>{
+      const key=n+"|"+u;
+      combined[key]=combined[key]||{q:0,u,n};
+      combined[key].q+=q*s;
+    });
+  }
+  return Object.values(combined).sort((a,b)=>a.n.localeCompare(b.n));
+}
+
+function qtyText(it){
+  const q=frac(it.q);
+  if(!it.u)return q;
+  let u=it.u;
+  if(it.q>1&&["cup","slice","clove","can","block","jar","scoop"].includes(u))u+="s";
+  return q+" "+u;
+}
+
+function renderList(){
+  const items=buildList();
+  const nMeals=Object.keys(picks).length;
+  const box=document.getElementById("rlist");
+  if(!items.length){
+    box.innerHTML='<p class="rempty">Nothing checked yet.<br>Pick some meals to start.</p>';
+  }else{
+    box.innerHTML=items.map(it=>`<div class="ritem"><span>${it.n}</span><span class="q">${qtyText(it)}</span></div>`).join("");
+  }
+  document.getElementById("rcount").textContent=nMeals?`${nMeals} meal${nMeals>1?"s":""} · ${items.length} item${items.length!==1?"s":""}`:"";
+  document.getElementById("fabN").textContent=items.length;
+}
+
+document.getElementById("copyBtn").onclick=function(){
+  const items=buildList();
+  if(!items.length)return;
+  const text="SHOPPING LIST\n"+items.map(it=>"- "+qtyText(it)+" "+it.n).join("\n");
+  const done=()=>{this.textContent="Copied!";setTimeout(()=>this.textContent="Copy list",1500);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(text,done));
+  }else fallbackCopy(text,done);
+};
+function fallbackCopy(text,done){
+  const ta=document.createElement("textarea");
+  ta.value=text;document.body.appendChild(ta);ta.select();
+  try{document.execCommand("copy");done();}catch(e){}
+  document.body.removeChild(ta);
+}
+
+document.getElementById("clearBtn").onclick=()=>{picks={};renderMeals();renderList();};
+
+const fab=document.getElementById("fab"),receipt=document.getElementById("receipt");
+fab.onclick=()=>{
+  const open=receipt.classList.toggle("open");
+  fab.setAttribute("aria-expanded",open);
+  fab.firstChild.textContent=open?"Hide list (":"Shopping list (";
+};
+
+chipRow(document.getElementById("fGroup"),GROUPS,"group");
+chipRow(document.getElementById("fCat"),CATS,"cat");
+chipRow(document.getElementById("fCal"),CALS,"cal");
+chipRow(document.getElementById("fPro"),PROS,"pro");
+renderMeals();
+renderList();
+</script>
+</body>
+</html>
