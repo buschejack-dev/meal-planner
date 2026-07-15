@@ -1,0 +1,2260 @@
+[
+  {
+    "name": "Sausage Egg Scramble Bowl",
+    "cat": "breakfast",
+    "cal": 650,
+    "pro": "pork",
+    "ing": [
+      [
+        3,
+        "",
+        "eggs"
+      ],
+      [
+        3,
+        "oz",
+        "breakfast sausage"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheddar"
+      ],
+      [
+        0.5,
+        "",
+        "bell pepper"
+      ],
+      [
+        2,
+        "",
+        "tortillas"
+      ]
+    ],
+    "st": [
+      "Brown sausage in a skillet over medium heat, breaking it up, 5-6 min.",
+      "Add diced bell pepper; cook 2 min.",
+      "Pour in beaten eggs; scramble until just set.",
+      "Top with cheese and serve as a bowl or in warmed tortillas."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "cat": "breakfast",
+    "cal": 600,
+    "pro": "eggs & dairy",
+    "ing": [
+      [
+        1,
+        "cup",
+        "Greek yogurt"
+      ],
+      [
+        0.5,
+        "cup",
+        "granola"
+      ],
+      [
+        2,
+        "tbsp",
+        "peanut butter"
+      ],
+      [
+        1,
+        "",
+        "banana"
+      ],
+      [
+        1,
+        "tbsp",
+        "honey"
+      ]
+    ],
+    "st": [
+      "Scoop yogurt into a bowl.",
+      "Top with granola, sliced banana, and peanut butter.",
+      "Drizzle with honey."
+    ]
+  },
+  {
+    "name": "Steak & Egg Hash",
+    "cat": "breakfast",
+    "cal": 750,
+    "pro": "steak",
+    "ing": [
+      [
+        5,
+        "oz",
+        "sirloin steak"
+      ],
+      [
+        1,
+        "cup",
+        "frozen diced potatoes"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        0.25,
+        "",
+        "onion"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ]
+    ],
+    "st": [
+      "Cook potatoes and diced onion in an oiled skillet until browned, 8-10 min; set aside.",
+      "Sear steak 3-4 min per side; rest, then dice.",
+      "Fry eggs to your liking.",
+      "Combine potatoes and steak; top with eggs and cheese."
+    ]
+  },
+  {
+    "name": "Protein Oatmeal",
+    "cat": "breakfast",
+    "cal": 620,
+    "pro": "eggs & dairy",
+    "ing": [
+      [
+        0.75,
+        "cup",
+        "oats"
+      ],
+      [
+        1,
+        "scoop",
+        "protein powder"
+      ],
+      [
+        2,
+        "tbsp",
+        "peanut butter"
+      ],
+      [
+        0.5,
+        "cup",
+        "blueberries"
+      ],
+      [
+        1,
+        "cup",
+        "milk"
+      ]
+    ],
+    "st": [
+      "Cook oats with milk per package directions.",
+      "Stir in protein powder off the heat.",
+      "Top with peanut butter and blueberries."
+    ]
+  },
+  {
+    "name": "Breakfast Burritos",
+    "cat": "breakfast",
+    "cal": 700,
+    "pro": "pork",
+    "ing": [
+      [
+        3,
+        "",
+        "eggs"
+      ],
+      [
+        3,
+        "slice",
+        "bacon"
+      ],
+      [
+        2,
+        "",
+        "tortillas"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ]
+    ],
+    "st": [
+      "Cook bacon until crisp; drain and chop.",
+      "Scramble eggs in the same pan.",
+      "Fill tortillas with eggs, bacon, cheese, and salsa; roll up."
+    ]
+  },
+  {
+    "name": "Ham & Cheese Egg Muffins",
+    "cat": "breakfast",
+    "cal": 600,
+    "pro": "pork",
+    "ing": [
+      [
+        3,
+        "",
+        "eggs"
+      ],
+      [
+        3,
+        "oz",
+        "diced ham"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheddar"
+      ],
+      [
+        0.5,
+        "",
+        "bell pepper"
+      ],
+      [
+        0.25,
+        "cup",
+        "milk"
+      ]
+    ],
+    "st": [
+      "Heat oven to 350°F; grease a muffin tin.",
+      "Whisk eggs and milk; stir in ham, diced pepper, and cheese.",
+      "Fill cups and bake 18-20 min until set."
+    ]
+  },
+  {
+    "name": "Ground Turkey Breakfast Skillet",
+    "cat": "breakfast",
+    "cal": 680,
+    "pro": "turkey",
+    "ing": [
+      [
+        4,
+        "oz",
+        "ground turkey"
+      ],
+      [
+        1,
+        "cup",
+        "frozen diced potatoes"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        1,
+        "cup",
+        "spinach"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ]
+    ],
+    "st": [
+      "Brown turkey 5-6 min; season with salt and pepper.",
+      "Add potatoes; cook until crispy, about 8 min.",
+      "Wilt in spinach, then crack eggs on top; cover until whites set.",
+      "Finish with cheese."
+    ]
+  },
+  {
+    "name": "Bagel, Egg & Sausage Sandwich",
+    "cat": "breakfast",
+    "cal": 720,
+    "pro": "pork",
+    "ing": [
+      [
+        1,
+        "",
+        "bagel"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        2,
+        "oz",
+        "breakfast sausage"
+      ],
+      [
+        1,
+        "slice",
+        "American cheese"
+      ],
+      [
+        1,
+        "tbsp",
+        "butter"
+      ]
+    ],
+    "st": [
+      "Cook sausage patty 3-4 min per side.",
+      "Fry eggs in butter.",
+      "Toast bagel; stack with sausage, eggs, and cheese."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Protein Pancakes",
+    "cat": "breakfast",
+    "cal": 630,
+    "pro": "eggs & dairy",
+    "ing": [
+      [
+        0.5,
+        "cup",
+        "cottage cheese"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        0.5,
+        "cup",
+        "oats"
+      ],
+      [
+        1,
+        "",
+        "banana"
+      ],
+      [
+        2,
+        "tbsp",
+        "maple syrup"
+      ]
+    ],
+    "st": [
+      "Blend cottage cheese, eggs, oats, and banana until smooth.",
+      "Cook pancakes on a greased griddle 2-3 min per side.",
+      "Serve with maple syrup."
+    ]
+  },
+  {
+    "name": "Chorizo Breakfast Tacos",
+    "cat": "breakfast",
+    "cal": 700,
+    "pro": "pork",
+    "ing": [
+      [
+        3,
+        "oz",
+        "chorizo"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        3,
+        "",
+        "tortillas"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ]
+    ],
+    "st": [
+      "Brown chorizo 5-6 min.",
+      "Scramble eggs into the chorizo until set.",
+      "Serve in warm tortillas with cheese and salsa."
+    ]
+  },
+  {
+    "name": "Tofu Scramble Wraps",
+    "cat": "breakfast",
+    "cal": 600,
+    "pro": "tofu",
+    "ing": [
+      [
+        0.5,
+        "block",
+        "extra-firm tofu"
+      ],
+      [
+        0.5,
+        "",
+        "bell pepper"
+      ],
+      [
+        1,
+        "cup",
+        "spinach"
+      ],
+      [
+        2,
+        "",
+        "tortillas"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ]
+    ],
+    "st": [
+      "Crumble tofu into a hot oiled skillet.",
+      "Add diced bell pepper; cook 4-5 min, seasoning with salt and pepper.",
+      "Wilt in spinach and stir in cheese.",
+      "Serve in warmed tortillas."
+    ]
+  },
+  {
+    "name": "French Toast + Bacon",
+    "cat": "breakfast",
+    "cal": 720,
+    "pro": "pork",
+    "ing": [
+      [
+        2,
+        "slice",
+        "bread"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        0.25,
+        "cup",
+        "milk"
+      ],
+      [
+        0.5,
+        "tsp",
+        "cinnamon"
+      ],
+      [
+        2,
+        "tbsp",
+        "maple syrup"
+      ],
+      [
+        3,
+        "slice",
+        "bacon"
+      ]
+    ],
+    "st": [
+      "Cook bacon until crisp.",
+      "Whisk eggs, milk, and cinnamon; dip bread slices to coat.",
+      "Cook 2-3 min per side until golden; serve with syrup."
+    ]
+  },
+  {
+    "name": "Smoked Salmon Bagel",
+    "cat": "breakfast",
+    "cal": 640,
+    "pro": "seafood",
+    "ing": [
+      [
+        1,
+        "",
+        "bagel"
+      ],
+      [
+        2,
+        "tbsp",
+        "cream cheese"
+      ],
+      [
+        3,
+        "oz",
+        "smoked salmon"
+      ],
+      [
+        0.25,
+        "",
+        "red onion"
+      ],
+      [
+        1,
+        "tbsp",
+        "capers"
+      ]
+    ],
+    "st": [
+      "Toast bagel.",
+      "Spread with cream cheese.",
+      "Top with smoked salmon, thin-sliced red onion, and capers."
+    ]
+  },
+  {
+    "name": "Chicken Caesar Wrap",
+    "cat": "lunch",
+    "cal": 650,
+    "pro": "chicken",
+    "ing": [
+      [
+        4,
+        "oz",
+        "rotisserie chicken"
+      ],
+      [
+        2,
+        "cup",
+        "romaine"
+      ],
+      [
+        2,
+        "tbsp",
+        "Caesar dressing"
+      ],
+      [
+        2,
+        "tbsp",
+        "parmesan"
+      ],
+      [
+        1,
+        "",
+        "tortillas"
+      ]
+    ],
+    "st": [
+      "Chop romaine and shred chicken.",
+      "Toss with dressing and parmesan.",
+      "Roll tightly into a tortilla."
+    ]
+  },
+  {
+    "name": "Turkey Avocado Sandwich + Chips",
+    "cat": "lunch",
+    "cal": 680,
+    "pro": "turkey",
+    "ing": [
+      [
+        4,
+        "oz",
+        "deli turkey"
+      ],
+      [
+        0.5,
+        "",
+        "avocado"
+      ],
+      [
+        2,
+        "slice",
+        "bread"
+      ],
+      [
+        1,
+        "slice",
+        "provolone"
+      ],
+      [
+        1,
+        "oz",
+        "kettle chips"
+      ]
+    ],
+    "st": [
+      "Toast bread if desired.",
+      "Layer turkey, provolone, and sliced avocado.",
+      "Serve with chips."
+    ]
+  },
+  {
+    "name": "Tuna Rice Bowl",
+    "cat": "lunch",
+    "cal": 620,
+    "pro": "seafood",
+    "ing": [
+      [
+        1,
+        "can",
+        "tuna"
+      ],
+      [
+        1,
+        "cup",
+        "instant rice"
+      ],
+      [
+        1,
+        "tbsp",
+        "mayo"
+      ],
+      [
+        1,
+        "tsp",
+        "sriracha"
+      ],
+      [
+        0.5,
+        "",
+        "cucumber"
+      ]
+    ],
+    "st": [
+      "Microwave rice per package.",
+      "Mix drained tuna with mayo and sriracha.",
+      "Top rice with tuna and sliced cucumber."
+    ]
+  },
+  {
+    "name": "Chicken Quesadillas",
+    "cat": "lunch",
+    "cal": 720,
+    "pro": "chicken",
+    "ing": [
+      [
+        4,
+        "oz",
+        "rotisserie chicken"
+      ],
+      [
+        2,
+        "",
+        "tortillas"
+      ],
+      [
+        0.5,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ],
+      [
+        2,
+        "tbsp",
+        "sour cream"
+      ]
+    ],
+    "st": [
+      "Layer chicken and cheese between tortillas.",
+      "Cook in a dry skillet 2-3 min per side until crisp and melted.",
+      "Slice; serve with salsa and sour cream."
+    ]
+  },
+  {
+    "name": "Cold Soba Noodle Bowl",
+    "cat": "lunch",
+    "cal": 640,
+    "pro": "chicken",
+    "ing": [
+      [
+        3,
+        "oz",
+        "soba noodles"
+      ],
+      [
+        4,
+        "oz",
+        "deli chicken"
+      ],
+      [
+        0.5,
+        "",
+        "cucumber"
+      ],
+      [
+        1,
+        "tbsp",
+        "soy sauce"
+      ],
+      [
+        1,
+        "tsp",
+        "sesame oil"
+      ]
+    ],
+    "st": [
+      "Cook soba per package; rinse under cold water.",
+      "Toss with soy sauce and sesame oil.",
+      "Top with chicken and sliced cucumber."
+    ]
+  },
+  {
+    "name": "BBQ Chicken Flatbread",
+    "cat": "lunch",
+    "cal": 690,
+    "pro": "chicken",
+    "ing": [
+      [
+        4,
+        "oz",
+        "rotisserie chicken"
+      ],
+      [
+        1,
+        "",
+        "flatbread"
+      ],
+      [
+        2,
+        "tbsp",
+        "BBQ sauce"
+      ],
+      [
+        0.5,
+        "cup",
+        "mozzarella"
+      ],
+      [
+        0.25,
+        "",
+        "red onion"
+      ]
+    ],
+    "st": [
+      "Heat oven to 425°F.",
+      "Spread BBQ sauce on flatbread; top with chicken, onion, and mozzarella.",
+      "Bake 8-10 min until melted and edges crisp."
+    ]
+  },
+  {
+    "name": "Ground Turkey Lettuce Wraps + Rice",
+    "cat": "lunch",
+    "cal": 640,
+    "pro": "turkey",
+    "ing": [
+      [
+        4,
+        "oz",
+        "ground turkey"
+      ],
+      [
+        4,
+        "",
+        "romaine leaves"
+      ],
+      [
+        0.75,
+        "cup",
+        "instant rice"
+      ],
+      [
+        1,
+        "tbsp",
+        "soy sauce"
+      ],
+      [
+        1,
+        "tbsp",
+        "hoisin sauce"
+      ]
+    ],
+    "st": [
+      "Brown turkey; stir in soy and hoisin.",
+      "Microwave rice.",
+      "Spoon turkey and rice into romaine leaves."
+    ]
+  },
+  {
+    "name": "Steak Salad",
+    "cat": "lunch",
+    "cal": 700,
+    "pro": "steak",
+    "ing": [
+      [
+        5,
+        "oz",
+        "sirloin steak"
+      ],
+      [
+        3,
+        "cup",
+        "spring mix"
+      ],
+      [
+        0.5,
+        "cup",
+        "cherry tomatoes"
+      ],
+      [
+        2,
+        "tbsp",
+        "blue cheese crumbles"
+      ],
+      [
+        2,
+        "tbsp",
+        "ranch"
+      ]
+    ],
+    "st": [
+      "Sear steak 3-4 min per side; rest 5 min, then slice thin.",
+      "Toss greens with halved tomatoes and ranch.",
+      "Top with steak and blue cheese."
+    ]
+  },
+  {
+    "name": "Chicken Rice Soup + Roll",
+    "cat": "lunch",
+    "cal": 620,
+    "pro": "chicken",
+    "ing": [
+      [
+        4,
+        "oz",
+        "rotisserie chicken"
+      ],
+      [
+        0.5,
+        "cup",
+        "instant rice"
+      ],
+      [
+        2,
+        "cup",
+        "chicken broth"
+      ],
+      [
+        1,
+        "",
+        "carrot"
+      ],
+      [
+        1,
+        "",
+        "dinner rolls"
+      ]
+    ],
+    "st": [
+      "Simmer broth with sliced carrot 8 min.",
+      "Add chicken and rice; simmer 5 min more.",
+      "Serve with a warm roll."
+    ]
+  },
+  {
+    "name": "Ham & Swiss Melt + Fruit",
+    "cat": "lunch",
+    "cal": 660,
+    "pro": "pork",
+    "ing": [
+      [
+        4,
+        "oz",
+        "deli ham"
+      ],
+      [
+        1,
+        "slice",
+        "Swiss cheese"
+      ],
+      [
+        2,
+        "slice",
+        "bread"
+      ],
+      [
+        1,
+        "tbsp",
+        "butter"
+      ],
+      [
+        1,
+        "cup",
+        "grapes"
+      ]
+    ],
+    "st": [
+      "Butter bread; layer ham and Swiss.",
+      "Grill 3 min per side until golden and melted.",
+      "Serve with grapes."
+    ]
+  },
+  {
+    "name": "Crispy Tofu Sandwich",
+    "cat": "lunch",
+    "cal": 650,
+    "pro": "tofu",
+    "ing": [
+      [
+        0.5,
+        "block",
+        "extra-firm tofu"
+      ],
+      [
+        1,
+        "",
+        "hoagie roll"
+      ],
+      [
+        1,
+        "tbsp",
+        "mayo"
+      ],
+      [
+        1,
+        "tsp",
+        "sriracha"
+      ],
+      [
+        0.5,
+        "",
+        "cucumber"
+      ],
+      [
+        1,
+        "",
+        "carrot"
+      ]
+    ],
+    "st": [
+      "Slice tofu into planks; pat dry and pan-fry in oil 3-4 min per side until golden.",
+      "Mix mayo and sriracha; spread on the roll.",
+      "Layer tofu with sliced cucumber and shredded carrot."
+    ]
+  },
+  {
+    "name": "Italian Sub",
+    "cat": "lunch",
+    "cal": 700,
+    "pro": "pork",
+    "ing": [
+      [
+        1,
+        "",
+        "hoagie roll"
+      ],
+      [
+        2,
+        "oz",
+        "salami"
+      ],
+      [
+        2,
+        "oz",
+        "deli ham"
+      ],
+      [
+        1,
+        "slice",
+        "provolone"
+      ],
+      [
+        1,
+        "cup",
+        "lettuce"
+      ],
+      [
+        1,
+        "tbsp",
+        "Italian dressing"
+      ]
+    ],
+    "st": [
+      "Split the hoagie roll.",
+      "Layer salami, ham, and provolone.",
+      "Add lettuce and drizzle with Italian dressing."
+    ]
+  },
+  {
+    "name": "Chicken Pesto Pasta Salad",
+    "cat": "lunch",
+    "cal": 680,
+    "pro": "chicken",
+    "ing": [
+      [
+        4,
+        "oz",
+        "rotisserie chicken"
+      ],
+      [
+        2,
+        "oz",
+        "rotini"
+      ],
+      [
+        2,
+        "tbsp",
+        "pesto"
+      ],
+      [
+        0.5,
+        "cup",
+        "cherry tomatoes"
+      ],
+      [
+        0.25,
+        "cup",
+        "mozzarella"
+      ]
+    ],
+    "st": [
+      "Cook rotini; rinse under cold water.",
+      "Toss with pesto, chicken, halved tomatoes, and mozzarella.",
+      "Chill or serve right away."
+    ]
+  },
+  {
+    "name": "Egg Salad Sandwich + Fruit",
+    "cat": "lunch",
+    "cal": 620,
+    "pro": "eggs & dairy",
+    "ing": [
+      [
+        3,
+        "",
+        "eggs"
+      ],
+      [
+        1.5,
+        "tbsp",
+        "mayo"
+      ],
+      [
+        1,
+        "tsp",
+        "mustard"
+      ],
+      [
+        2,
+        "slice",
+        "bread"
+      ],
+      [
+        1,
+        "cup",
+        "grapes"
+      ]
+    ],
+    "st": [
+      "Hard-boil eggs 10 min; cool and chop.",
+      "Mix with mayo and mustard; season with salt and pepper.",
+      "Pile onto bread; serve with grapes."
+    ]
+  },
+  {
+    "name": "Chicken Thighs & Rice",
+    "cat": "dinner",
+    "cal": 850,
+    "pro": "chicken",
+    "ing": [
+      [
+        0.5,
+        "lb",
+        "chicken thighs"
+      ],
+      [
+        0.75,
+        "cup",
+        "jasmine rice"
+      ],
+      [
+        1,
+        "cup",
+        "broccoli"
+      ],
+      [
+        2,
+        "tbsp",
+        "soy sauce"
+      ],
+      [
+        2,
+        "clove",
+        "garlic"
+      ],
+      [
+        1,
+        "tbsp",
+        "honey"
+      ]
+    ],
+    "st": [
+      "Cook rice per package.",
+      "Sear thighs skin-side down 6-7 min; flip and cook 5 min more.",
+      "Add minced garlic, soy, and honey; simmer until glazed.",
+      "Steam broccoli; serve everything over rice."
+    ]
+  },
+  {
+    "name": "Baked Chicken Thighs, Potatoes & Green Beans",
+    "cat": "dinner",
+    "cal": 800,
+    "pro": "chicken",
+    "ing": [
+      [
+        0.5,
+        "lb",
+        "chicken thighs"
+      ],
+      [
+        0.5,
+        "lb",
+        "baby potatoes"
+      ],
+      [
+        1,
+        "cup",
+        "green beans"
+      ],
+      [
+        1,
+        "tbsp",
+        "olive oil"
+      ],
+      [
+        1,
+        "tsp",
+        "Italian seasoning"
+      ]
+    ],
+    "st": [
+      "Heat oven to 425°F.",
+      "Toss everything with oil and seasoning on a sheet pan.",
+      "Roast 30-35 min until chicken reaches 165°F and potatoes are tender."
+    ]
+  },
+  {
+    "name": "Ground Beef Burrito Bowls",
+    "cat": "dinner",
+    "cal": 900,
+    "pro": "ground beef",
+    "ing": [
+      [
+        5,
+        "oz",
+        "ground beef"
+      ],
+      [
+        1,
+        "cup",
+        "instant rice"
+      ],
+      [
+        0.5,
+        "can",
+        "black beans"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ],
+      [
+        2,
+        "tbsp",
+        "sour cream"
+      ]
+    ],
+    "st": [
+      "Brown beef; season generously.",
+      "Microwave rice; warm the beans.",
+      "Layer bowls with rice, beef, and beans; top with cheese, salsa, and sour cream."
+    ]
+  },
+  {
+    "name": "Salmon, Rice & Asparagus",
+    "cat": "dinner",
+    "cal": 750,
+    "pro": "seafood",
+    "ing": [
+      [
+        6,
+        "oz",
+        "salmon fillet"
+      ],
+      [
+        0.75,
+        "cup",
+        "jasmine rice"
+      ],
+      [
+        6,
+        "oz",
+        "asparagus"
+      ],
+      [
+        1,
+        "tbsp",
+        "butter"
+      ],
+      [
+        0.5,
+        "",
+        "lemon"
+      ]
+    ],
+    "st": [
+      "Heat oven to 400°F; start the rice.",
+      "Roast salmon and asparagus with butter, salt, and pepper 12-14 min.",
+      "Serve over rice with a squeeze of lemon."
+    ]
+  },
+  {
+    "name": "Pork Chops & Roasted Sweet Potatoes",
+    "cat": "dinner",
+    "cal": 820,
+    "pro": "pork",
+    "ing": [
+      [
+        1,
+        "",
+        "pork chops"
+      ],
+      [
+        1,
+        "",
+        "sweet potatoes"
+      ],
+      [
+        1,
+        "tbsp",
+        "olive oil"
+      ],
+      [
+        1,
+        "tsp",
+        "brown sugar"
+      ],
+      [
+        1,
+        "cup",
+        "broccoli"
+      ]
+    ],
+    "st": [
+      "Heat oven to 425°F; roast sweet potato wedges tossed with oil and brown sugar 25 min.",
+      "Sear chops 4-5 min per side to 145°F internal.",
+      "Steam broccoli and serve."
+    ]
+  },
+  {
+    "name": "Crispy Tofu Stir-Fry",
+    "cat": "dinner",
+    "cal": 600,
+    "pro": "tofu",
+    "ing": [
+      [
+        0.5,
+        "block",
+        "extra-firm tofu"
+      ],
+      [
+        0.75,
+        "cup",
+        "instant rice"
+      ],
+      [
+        1.5,
+        "cup",
+        "frozen stir-fry vegetables"
+      ],
+      [
+        2,
+        "tbsp",
+        "soy sauce"
+      ],
+      [
+        1,
+        "tbsp",
+        "cornstarch"
+      ],
+      [
+        1,
+        "tsp",
+        "sesame oil"
+      ]
+    ],
+    "st": [
+      "Press tofu 15 min; cube and toss with cornstarch.",
+      "Pan-fry in oil until golden on all sides; remove.",
+      "Stir-fry vegetables; return tofu with soy and sesame oil.",
+      "Serve over rice."
+    ]
+  },
+  {
+    "name": "Chicken Thigh Fajita Skillet",
+    "cat": "dinner",
+    "cal": 880,
+    "pro": "chicken",
+    "ing": [
+      [
+        0.5,
+        "lb",
+        "chicken thighs"
+      ],
+      [
+        1,
+        "",
+        "bell pepper"
+      ],
+      [
+        0.5,
+        "",
+        "onion"
+      ],
+      [
+        1,
+        "tbsp",
+        "fajita seasoning"
+      ],
+      [
+        2,
+        "",
+        "tortillas"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ]
+    ],
+    "st": [
+      "Season thighs with fajita seasoning; sear 5-6 min per side, then slice.",
+      "Sauté sliced pepper and onion in the same pan.",
+      "Serve in warm tortillas with cheese."
+    ]
+  },
+  {
+    "name": "Spaghetti with Meat Sauce",
+    "cat": "dinner",
+    "cal": 950,
+    "pro": "ground beef",
+    "ing": [
+      [
+        5,
+        "oz",
+        "ground beef"
+      ],
+      [
+        3,
+        "oz",
+        "spaghetti"
+      ],
+      [
+        0.75,
+        "cup",
+        "marinara"
+      ],
+      [
+        2,
+        "tbsp",
+        "parmesan"
+      ],
+      [
+        2,
+        "clove",
+        "garlic"
+      ]
+    ],
+    "st": [
+      "Cook spaghetti.",
+      "Brown beef with minced garlic; stir in marinara and simmer 10 min.",
+      "Serve over pasta topped with parmesan."
+    ]
+  },
+  {
+    "name": "Ground Turkey Taco Night",
+    "cat": "dinner",
+    "cal": 850,
+    "pro": "turkey",
+    "ing": [
+      [
+        5,
+        "oz",
+        "ground turkey"
+      ],
+      [
+        3,
+        "",
+        "taco shells"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        1,
+        "cup",
+        "lettuce"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ],
+      [
+        2,
+        "tbsp",
+        "sour cream"
+      ]
+    ],
+    "st": [
+      "Brown turkey; season with salt or taco seasoning.",
+      "Warm taco shells.",
+      "Assemble with lettuce, cheese, salsa, and sour cream."
+    ]
+  },
+  {
+    "name": "Sheet Pan Sausage & Veggies",
+    "cat": "dinner",
+    "cal": 780,
+    "pro": "pork",
+    "ing": [
+      [
+        5,
+        "oz",
+        "smoked sausage"
+      ],
+      [
+        0.5,
+        "lb",
+        "baby potatoes"
+      ],
+      [
+        1,
+        "",
+        "bell pepper"
+      ],
+      [
+        0.5,
+        "",
+        "onion"
+      ],
+      [
+        1,
+        "tbsp",
+        "olive oil"
+      ]
+    ],
+    "st": [
+      "Heat oven to 425°F.",
+      "Toss sliced sausage, halved potatoes, and chopped vegetables with oil.",
+      "Roast 25-30 min, stirring once halfway."
+    ]
+  },
+  {
+    "name": "Beef Stir-Fry",
+    "cat": "dinner",
+    "cal": 820,
+    "pro": "steak",
+    "ing": [
+      [
+        5,
+        "oz",
+        "sirloin steak"
+      ],
+      [
+        1.5,
+        "cup",
+        "frozen stir-fry vegetables"
+      ],
+      [
+        0.75,
+        "cup",
+        "instant rice"
+      ],
+      [
+        2,
+        "tbsp",
+        "soy sauce"
+      ],
+      [
+        2,
+        "clove",
+        "garlic"
+      ],
+      [
+        1,
+        "tbsp",
+        "cornstarch"
+      ]
+    ],
+    "st": [
+      "Slice steak thin; toss with cornstarch.",
+      "Sear in a hot pan 2-3 min; remove.",
+      "Stir-fry vegetables; return beef with soy and garlic.",
+      "Serve over rice."
+    ]
+  },
+  {
+    "name": "Chicken Alfredo",
+    "cat": "dinner",
+    "cal": 1000,
+    "pro": "chicken",
+    "ing": [
+      [
+        0.5,
+        "lb",
+        "chicken thighs"
+      ],
+      [
+        3,
+        "oz",
+        "fettuccine"
+      ],
+      [
+        0.5,
+        "jar",
+        "alfredo sauce"
+      ],
+      [
+        2,
+        "tbsp",
+        "parmesan"
+      ],
+      [
+        2,
+        "clove",
+        "garlic"
+      ]
+    ],
+    "st": [
+      "Cook fettuccine.",
+      "Sear diced thighs with minced garlic until cooked through.",
+      "Stir in alfredo sauce; toss with pasta and parmesan."
+    ]
+  },
+  {
+    "name": "Shrimp Tacos",
+    "cat": "dinner",
+    "cal": 720,
+    "pro": "seafood",
+    "ing": [
+      [
+        5,
+        "oz",
+        "shrimp"
+      ],
+      [
+        3,
+        "",
+        "tortillas"
+      ],
+      [
+        1,
+        "cup",
+        "coleslaw mix"
+      ],
+      [
+        2,
+        "tbsp",
+        "ranch"
+      ],
+      [
+        0.5,
+        "",
+        "lime"
+      ],
+      [
+        1,
+        "tsp",
+        "taco seasoning"
+      ]
+    ],
+    "st": [
+      "Toss shrimp with taco seasoning; sauté 2-3 min per side.",
+      "Mix coleslaw with ranch and lime juice.",
+      "Assemble in warm tortillas."
+    ]
+  },
+  {
+    "name": "Turkey Burgers & Sweet Potato Fries",
+    "cat": "dinner",
+    "cal": 800,
+    "pro": "turkey",
+    "ing": [
+      [
+        5,
+        "oz",
+        "ground turkey"
+      ],
+      [
+        1,
+        "",
+        "burger buns"
+      ],
+      [
+        4,
+        "oz",
+        "frozen sweet potato fries"
+      ],
+      [
+        1,
+        "slice",
+        "cheddar"
+      ],
+      [
+        1,
+        "",
+        "lettuce leaves"
+      ]
+    ],
+    "st": [
+      "Bake fries per package.",
+      "Form turkey into a patty; season well.",
+      "Cook 5-6 min per side to 165°F; melt cheese on top.",
+      "Serve on the bun with lettuce."
+    ]
+  },
+  {
+    "name": "Baked Ziti",
+    "cat": "dinner",
+    "cal": 950,
+    "pro": "ground beef",
+    "ing": [
+      [
+        5,
+        "oz",
+        "ground beef"
+      ],
+      [
+        3,
+        "oz",
+        "ziti"
+      ],
+      [
+        0.75,
+        "cup",
+        "marinara"
+      ],
+      [
+        0.5,
+        "cup",
+        "mozzarella"
+      ],
+      [
+        0.25,
+        "cup",
+        "ricotta"
+      ]
+    ],
+    "st": [
+      "Heat oven to 375°F; cook ziti 2 min shy of package time.",
+      "Brown beef; mix with marinara, ziti, and ricotta in a baking dish.",
+      "Top with mozzarella; bake 20 min until bubbly."
+    ]
+  },
+  {
+    "name": "Honey Garlic Tofu Bowls",
+    "cat": "dinner",
+    "cal": 640,
+    "pro": "tofu",
+    "ing": [
+      [
+        0.5,
+        "block",
+        "extra-firm tofu"
+      ],
+      [
+        0.75,
+        "cup",
+        "jasmine rice"
+      ],
+      [
+        1,
+        "tbsp",
+        "honey"
+      ],
+      [
+        2,
+        "tbsp",
+        "soy sauce"
+      ],
+      [
+        2,
+        "clove",
+        "garlic"
+      ],
+      [
+        1,
+        "cup",
+        "frozen broccoli"
+      ]
+    ],
+    "st": [
+      "Press and cube tofu; pan-fry in oil until golden.",
+      "Add honey, soy, and minced garlic; toss to glaze.",
+      "Serve over rice with steamed broccoli."
+    ]
+  },
+  {
+    "name": "Tofu Tacos",
+    "cat": "dinner",
+    "cal": 650,
+    "pro": "tofu",
+    "ing": [
+      [
+        0.5,
+        "block",
+        "extra-firm tofu"
+      ],
+      [
+        1,
+        "tbsp",
+        "taco seasoning"
+      ],
+      [
+        3,
+        "",
+        "tortillas"
+      ],
+      [
+        1,
+        "cup",
+        "coleslaw mix"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ],
+      [
+        2,
+        "tbsp",
+        "sour cream"
+      ]
+    ],
+    "st": [
+      "Crumble tofu into a hot oiled skillet; sauté with taco seasoning 6-8 min until browned.",
+      "Warm tortillas.",
+      "Fill with tofu, slaw, salsa, and sour cream."
+    ]
+  },
+  {
+    "name": "Peanut Tofu Noodles",
+    "cat": "dinner",
+    "cal": 700,
+    "pro": "tofu",
+    "ing": [
+      [
+        0.5,
+        "block",
+        "extra-firm tofu"
+      ],
+      [
+        3,
+        "oz",
+        "spaghetti"
+      ],
+      [
+        2,
+        "tbsp",
+        "peanut butter"
+      ],
+      [
+        2,
+        "tbsp",
+        "soy sauce"
+      ],
+      [
+        2,
+        "clove",
+        "garlic"
+      ],
+      [
+        1,
+        "cup",
+        "frozen broccoli"
+      ]
+    ],
+    "st": [
+      "Cook noodles; steam broccoli.",
+      "Whisk peanut butter, soy, minced garlic, and a splash of hot pasta water into a sauce.",
+      "Pan-fry cubed tofu until golden.",
+      "Toss everything together in the sauce."
+    ]
+  },
+  {
+    "name": "Tofu Fried Rice",
+    "cat": "dinner",
+    "cal": 680,
+    "pro": "tofu",
+    "ing": [
+      [
+        0.5,
+        "block",
+        "extra-firm tofu"
+      ],
+      [
+        1,
+        "cup",
+        "instant rice"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        0.75,
+        "cup",
+        "frozen peas & carrots"
+      ],
+      [
+        2,
+        "tbsp",
+        "soy sauce"
+      ],
+      [
+        1,
+        "tsp",
+        "sesame oil"
+      ]
+    ],
+    "st": [
+      "Cook or reheat rice (day-old works best).",
+      "Pan-fry cubed tofu until golden; push aside and scramble eggs in the pan.",
+      "Add rice, peas and carrots, and soy; stir-fry 3-4 min.",
+      "Finish with sesame oil."
+    ]
+  },
+  {
+    "name": "BBQ Tofu Bowls",
+    "cat": "dinner",
+    "cal": 660,
+    "pro": "tofu",
+    "ing": [
+      [
+        0.5,
+        "block",
+        "extra-firm tofu"
+      ],
+      [
+        2,
+        "tbsp",
+        "BBQ sauce"
+      ],
+      [
+        0.75,
+        "cup",
+        "instant rice"
+      ],
+      [
+        0.5,
+        "cup",
+        "frozen corn"
+      ],
+      [
+        1,
+        "cup",
+        "coleslaw mix"
+      ]
+    ],
+    "st": [
+      "Press and cube tofu; pan-fry until crisp.",
+      "Toss with BBQ sauce.",
+      "Serve over rice with warmed corn and coleslaw mix."
+    ]
+  },
+  {
+    "name": "Chicken Parmesan",
+    "cat": "dinner",
+    "cal": 950,
+    "pro": "chicken",
+    "ing": [
+      [
+        1,
+        "",
+        "chicken breasts"
+      ],
+      [
+        0.75,
+        "cup",
+        "marinara"
+      ],
+      [
+        0.5,
+        "cup",
+        "mozzarella"
+      ],
+      [
+        3,
+        "oz",
+        "spaghetti"
+      ],
+      [
+        2,
+        "tbsp",
+        "parmesan"
+      ]
+    ],
+    "st": [
+      "Heat oven to 400°F; cook spaghetti.",
+      "Season chicken and sear 3 min per side in an oven-safe pan.",
+      "Top with marinara and mozzarella; bake 12-15 min to 165°F.",
+      "Serve over spaghetti with parmesan."
+    ]
+  },
+  {
+    "name": "Meatball Subs",
+    "cat": "dinner",
+    "cal": 900,
+    "pro": "ground beef",
+    "ing": [
+      [
+        5,
+        "",
+        "frozen meatballs"
+      ],
+      [
+        1,
+        "",
+        "hoagie roll"
+      ],
+      [
+        0.5,
+        "cup",
+        "marinara"
+      ],
+      [
+        0.5,
+        "cup",
+        "mozzarella"
+      ]
+    ],
+    "st": [
+      "Heat oven to 375°F.",
+      "Simmer meatballs in marinara until heated through.",
+      "Fill the roll, top with mozzarella, and bake 8-10 min until melted."
+    ]
+  },
+  {
+    "name": "Tilapia, Rice & Zucchini",
+    "cat": "dinner",
+    "cal": 620,
+    "pro": "seafood",
+    "ing": [
+      [
+        1,
+        "",
+        "tilapia fillets"
+      ],
+      [
+        0.75,
+        "cup",
+        "jasmine rice"
+      ],
+      [
+        1,
+        "",
+        "zucchini"
+      ],
+      [
+        1,
+        "tbsp",
+        "butter"
+      ],
+      [
+        0.5,
+        "",
+        "lemon"
+      ],
+      [
+        2,
+        "clove",
+        "garlic"
+      ]
+    ],
+    "st": [
+      "Cook rice.",
+      "Sauté sliced zucchini with garlic; set aside.",
+      "Pan-sear tilapia in butter 3 min per side.",
+      "Finish with a squeeze of lemon."
+    ]
+  },
+  {
+    "name": "Pulled Pork Sandwiches",
+    "cat": "dinner",
+    "cal": 850,
+    "pro": "pork",
+    "ing": [
+      [
+        5,
+        "oz",
+        "pulled pork"
+      ],
+      [
+        2,
+        "tbsp",
+        "BBQ sauce"
+      ],
+      [
+        1,
+        "",
+        "burger buns"
+      ],
+      [
+        1,
+        "cup",
+        "coleslaw mix"
+      ]
+    ],
+    "st": [
+      "Warm pulled pork with BBQ sauce.",
+      "Toast the bun.",
+      "Pile pork on the bun and top with coleslaw mix."
+    ]
+  },
+  {
+    "name": "Turkey Chili",
+    "cat": "dinner",
+    "cal": 750,
+    "pro": "turkey",
+    "ing": [
+      [
+        5,
+        "oz",
+        "ground turkey"
+      ],
+      [
+        0.5,
+        "can",
+        "diced tomatoes"
+      ],
+      [
+        0.5,
+        "can",
+        "black beans"
+      ],
+      [
+        1,
+        "tbsp",
+        "chili seasoning"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        0.25,
+        "",
+        "onion"
+      ]
+    ],
+    "st": [
+      "Brown turkey with diced onion.",
+      "Add tomatoes, drained beans, and chili seasoning.",
+      "Simmer 20 min; top with cheese."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "cat": "snack",
+    "cal": 280,
+    "pro": "other",
+    "ing": [
+      [
+        1,
+        "",
+        "apple"
+      ],
+      [
+        2,
+        "tbsp",
+        "peanut butter"
+      ]
+    ],
+    "st": [
+      "Slice apple; dip in peanut butter."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "cat": "snack",
+    "cal": 220,
+    "pro": "eggs & dairy",
+    "ing": [
+      [
+        0.75,
+        "cup",
+        "cottage cheese"
+      ],
+      [
+        0.5,
+        "cup",
+        "pineapple chunks"
+      ]
+    ],
+    "st": [
+      "Spoon pineapple over cottage cheese."
+    ]
+  },
+  {
+    "name": "Trail Mix Handful",
+    "cat": "snack",
+    "cal": 300,
+    "pro": "other",
+    "ing": [
+      [
+        0.25,
+        "cup",
+        "almonds"
+      ],
+      [
+        2,
+        "tbsp",
+        "raisins"
+      ],
+      [
+        1,
+        "tbsp",
+        "chocolate chips"
+      ]
+    ],
+    "st": [
+      "Mix together and portion into a bag."
+    ]
+  },
+  {
+    "name": "Cheese Stick + Beef Jerky",
+    "cat": "snack",
+    "cal": 230,
+    "pro": "other",
+    "ing": [
+      [
+        1,
+        "",
+        "string cheese"
+      ],
+      [
+        1,
+        "oz",
+        "beef jerky"
+      ]
+    ],
+    "st": [
+      "Grab and go."
+    ]
+  },
+  {
+    "name": "Greek Yogurt + Honey",
+    "cat": "snack",
+    "cal": 200,
+    "pro": "eggs & dairy",
+    "ing": [
+      [
+        0.75,
+        "cup",
+        "Greek yogurt"
+      ],
+      [
+        1,
+        "tbsp",
+        "honey"
+      ]
+    ],
+    "st": [
+      "Drizzle honey over yogurt."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots + Pretzels",
+    "cat": "snack",
+    "cal": 290,
+    "pro": "other",
+    "ing": [
+      [
+        0.25,
+        "cup",
+        "hummus"
+      ],
+      [
+        1,
+        "cup",
+        "baby carrots"
+      ],
+      [
+        1,
+        "oz",
+        "pretzels"
+      ]
+    ],
+    "st": [
+      "Dip carrots and pretzels in hummus."
+    ]
+  },
+  {
+    "name": "Banana Protein Shake",
+    "cat": "snack",
+    "cal": 250,
+    "pro": "other",
+    "ing": [
+      [
+        1,
+        "scoop",
+        "protein powder"
+      ],
+      [
+        1,
+        "cup",
+        "milk"
+      ],
+      [
+        1,
+        "",
+        "banana"
+      ]
+    ],
+    "st": [
+      "Blend milk, protein powder, and banana until smooth."
+    ]
+  },
+  {
+    "name": "Hard-Boiled Eggs + Everything Seasoning",
+    "cat": "snack",
+    "cal": 160,
+    "pro": "eggs & dairy",
+    "ing": [
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        0.5,
+        "tsp",
+        "everything bagel seasoning"
+      ]
+    ],
+    "st": [
+      "Boil eggs 10 min; cool in ice water.",
+      "Peel and sprinkle with seasoning."
+    ]
+  },
+  {
+    "name": "Steamed Edamame",
+    "cat": "snack",
+    "cal": 190,
+    "pro": "tofu",
+    "ing": [
+      [
+        1,
+        "cup",
+        "frozen edamame"
+      ]
+    ],
+    "st": [
+      "Microwave edamame per package directions; sprinkle with salt."
+    ]
+  }
+]
