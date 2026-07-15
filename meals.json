@@ -2256,5 +2256,952 @@
     "st": [
       "Microwave edamame per package directions; sprinkle with salt."
     ]
+  },
+  {
+    "name": "Steak Breakfast Tacos",
+    "cat": "breakfast",
+    "cal": 720,
+    "pro": "steak",
+    "ing": [
+      [
+        5,
+        "oz",
+        "sirloin steak"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        3,
+        "",
+        "tortillas"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ]
+    ],
+    "st": [
+      "Season and sear steak 3-4 min per side; rest 5 min, then slice thin.",
+      "Scramble eggs in the same pan.",
+      "Fill warm tortillas with steak, eggs, cheese, and salsa."
+    ]
+  },
+  {
+    "name": "Ground Beef & Egg Breakfast Skillet",
+    "cat": "breakfast",
+    "cal": 700,
+    "pro": "ground beef",
+    "ing": [
+      [
+        4,
+        "oz",
+        "ground beef"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        1,
+        "cup",
+        "frozen diced potatoes"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ]
+    ],
+    "st": [
+      "Brown beef in a skillet; season with salt and pepper.",
+      "Add potatoes; cook until crisp, about 8 min.",
+      "Push aside and scramble eggs in the pan.",
+      "Top with cheese and salsa."
+    ]
+  },
+  {
+    "name": "Buffalo Chicken Breakfast Wrap",
+    "cat": "breakfast",
+    "cal": 680,
+    "pro": "chicken",
+    "ing": [
+      [
+        4,
+        "oz",
+        "rotisserie chicken"
+      ],
+      [
+        2,
+        "",
+        "eggs"
+      ],
+      [
+        2,
+        "",
+        "tortillas"
+      ],
+      [
+        2,
+        "tbsp",
+        "buffalo sauce"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ]
+    ],
+    "st": [
+      "Toss shredded chicken in buffalo sauce; warm through in a pan.",
+      "Scramble eggs.",
+      "Fill tortillas with chicken, eggs, and cheese; roll up."
+    ]
+  },
+  {
+    "name": "Cajun Shrimp & Grits",
+    "cat": "breakfast",
+    "cal": 650,
+    "pro": "seafood",
+    "ing": [
+      [
+        5,
+        "oz",
+        "shrimp"
+      ],
+      [
+        0.5,
+        "cup",
+        "grits (dry)"
+      ],
+      [
+        1,
+        "tbsp",
+        "butter"
+      ],
+      [
+        1,
+        "tsp",
+        "cajun seasoning"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheddar"
+      ]
+    ],
+    "st": [
+      "Cook grits per package directions; stir in butter and cheddar.",
+      "Season shrimp with cajun seasoning.",
+      "Sauté shrimp 2-3 min per side until pink.",
+      "Serve shrimp over grits."
+    ]
+  },
+  {
+    "name": "Philly Cheesesteak Sandwich",
+    "cat": "lunch",
+    "cal": 750,
+    "pro": "steak",
+    "ing": [
+      [
+        5,
+        "oz",
+        "sirloin steak"
+      ],
+      [
+        1,
+        "",
+        "hoagie roll"
+      ],
+      [
+        1,
+        "slice",
+        "provolone"
+      ],
+      [
+        0.5,
+        "",
+        "bell pepper"
+      ],
+      [
+        0.25,
+        "",
+        "onion"
+      ]
+    ],
+    "st": [
+      "Slice steak thin.",
+      "Sauté steak with sliced peppers and onion 5-6 min.",
+      "Pile onto the roll; top with provolone and melt under the broiler 1-2 min."
+    ]
+  },
+  {
+    "name": "Steak Fajita Bowl",
+    "cat": "lunch",
+    "cal": 700,
+    "pro": "steak",
+    "ing": [
+      [
+        5,
+        "oz",
+        "sirloin steak"
+      ],
+      [
+        0.75,
+        "cup",
+        "instant rice"
+      ],
+      [
+        0.5,
+        "",
+        "bell pepper"
+      ],
+      [
+        0.25,
+        "",
+        "onion"
+      ],
+      [
+        1,
+        "tbsp",
+        "fajita seasoning"
+      ]
+    ],
+    "st": [
+      "Season and sear steak 3-4 min per side; slice thin.",
+      "Sauté peppers and onion with fajita seasoning.",
+      "Serve steak and peppers over rice."
+    ]
+  },
+  {
+    "name": "Beef Taco Salad",
+    "cat": "lunch",
+    "cal": 680,
+    "pro": "ground beef",
+    "ing": [
+      [
+        4,
+        "oz",
+        "ground beef"
+      ],
+      [
+        2,
+        "cup",
+        "lettuce"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        1,
+        "oz",
+        "tortilla chips"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ]
+    ],
+    "st": [
+      "Brown beef; season with taco seasoning.",
+      "Layer lettuce, beef, and cheese in a bowl.",
+      "Top with crushed tortilla chips and salsa."
+    ]
+  },
+  {
+    "name": "Ground Beef & Cheese Quesadilla",
+    "cat": "lunch",
+    "cal": 720,
+    "pro": "ground beef",
+    "ing": [
+      [
+        4,
+        "oz",
+        "ground beef"
+      ],
+      [
+        2,
+        "",
+        "tortillas"
+      ],
+      [
+        0.5,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "salsa"
+      ],
+      [
+        2,
+        "tbsp",
+        "sour cream"
+      ]
+    ],
+    "st": [
+      "Brown beef; season with salt and pepper.",
+      "Layer beef and cheese between tortillas.",
+      "Cook in a dry skillet 2-3 min per side until crisp and melted.",
+      "Serve with salsa and sour cream."
+    ]
+  },
+  {
+    "name": "Tuna Melt",
+    "cat": "lunch",
+    "cal": 640,
+    "pro": "seafood",
+    "ing": [
+      [
+        1,
+        "can",
+        "tuna"
+      ],
+      [
+        1.5,
+        "tbsp",
+        "mayo"
+      ],
+      [
+        2,
+        "slice",
+        "bread"
+      ],
+      [
+        1,
+        "slice",
+        "cheddar"
+      ],
+      [
+        1,
+        "tbsp",
+        "butter"
+      ]
+    ],
+    "st": [
+      "Mix tuna with mayo.",
+      "Spread onto bread; top with cheddar.",
+      "Butter the outside; grill 3 min per side until golden and melted."
+    ]
+  },
+  {
+    "name": "Crab Cake Sandwich",
+    "cat": "lunch",
+    "cal": 680,
+    "pro": "seafood",
+    "ing": [
+      [
+        2,
+        "",
+        "crab cakes"
+      ],
+      [
+        1,
+        "",
+        "hamburger bun"
+      ],
+      [
+        0.5,
+        "cup",
+        "lettuce"
+      ],
+      [
+        1.5,
+        "tbsp",
+        "tartar sauce"
+      ],
+      [
+        0.5,
+        "",
+        "lemon"
+      ]
+    ],
+    "st": [
+      "Cook crab cakes per package, about 3-4 min per side.",
+      "Assemble on the bun with lettuce and tartar sauce.",
+      "Finish with a squeeze of lemon."
+    ]
+  },
+  {
+    "name": "Bacon Cheeseburger & Fries",
+    "cat": "dinner",
+    "cal": 1150,
+    "pro": "ground beef",
+    "ing": [
+      [
+        6,
+        "oz",
+        "ground beef"
+      ],
+      [
+        1,
+        "",
+        "burger bun"
+      ],
+      [
+        2,
+        "slice",
+        "bacon"
+      ],
+      [
+        1,
+        "slice",
+        "cheddar"
+      ],
+      [
+        5,
+        "oz",
+        "frozen fries"
+      ]
+    ],
+    "st": [
+      "Bake fries per package directions.",
+      "Cook bacon until crisp.",
+      "Form beef into a patty; grill 4-5 min per side, melting cheese on top in the last minute.",
+      "Build the burger with bacon; serve with fries."
+    ]
+  },
+  {
+    "name": "Loaded Baked Potato with Chili",
+    "cat": "dinner",
+    "cal": 1050,
+    "pro": "ground beef",
+    "ing": [
+      [
+        1,
+        "",
+        "russet potato"
+      ],
+      [
+        5,
+        "oz",
+        "ground beef"
+      ],
+      [
+        0.5,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "sour cream"
+      ],
+      [
+        0.25,
+        "can",
+        "diced tomatoes"
+      ]
+    ],
+    "st": [
+      "Bake potato at 425°F for 45-50 min, or microwave 8-10 min.",
+      "Brown beef with diced tomatoes and chili seasoning; simmer 10 min.",
+      "Split the potato and top with chili, cheese, and sour cream."
+    ]
+  },
+  {
+    "name": "Garlic Butter Steak Bites & Rice",
+    "cat": "dinner",
+    "cal": 900,
+    "pro": "steak",
+    "ing": [
+      [
+        6,
+        "oz",
+        "sirloin steak, cubed"
+      ],
+      [
+        0.75,
+        "cup",
+        "jasmine rice"
+      ],
+      [
+        2,
+        "tbsp",
+        "butter"
+      ],
+      [
+        3,
+        "clove",
+        "garlic"
+      ],
+      [
+        1,
+        "cup",
+        "green beans"
+      ]
+    ],
+    "st": [
+      "Cook rice.",
+      "Sear cubed steak in butter 3-4 min until browned; add minced garlic in the last minute.",
+      "Steam green beans.",
+      "Serve steak over rice with beans."
+    ]
+  },
+  {
+    "name": "Steak & Potato Skillet",
+    "cat": "dinner",
+    "cal": 950,
+    "pro": "steak",
+    "ing": [
+      [
+        6,
+        "oz",
+        "sirloin steak, cubed"
+      ],
+      [
+        0.5,
+        "lb",
+        "baby potatoes"
+      ],
+      [
+        0.5,
+        "",
+        "bell pepper"
+      ],
+      [
+        0.25,
+        "",
+        "onion"
+      ],
+      [
+        1,
+        "tbsp",
+        "olive oil"
+      ]
+    ],
+    "st": [
+      "Par-cook diced potatoes in an oiled skillet 8 min.",
+      "Add steak, peppers, and onion; cook 6-8 min until steak is browned and potatoes tender."
+    ]
+  },
+  {
+    "name": "Chicken Bacon Ranch Pasta",
+    "cat": "dinner",
+    "cal": 1050,
+    "pro": "chicken",
+    "ing": [
+      [
+        1,
+        "",
+        "chicken breasts"
+      ],
+      [
+        3,
+        "oz",
+        "penne"
+      ],
+      [
+        3,
+        "slice",
+        "bacon"
+      ],
+      [
+        3,
+        "tbsp",
+        "ranch dressing"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ]
+    ],
+    "st": [
+      "Cook pasta.",
+      "Cook bacon until crisp; chop.",
+      "Sear diced chicken until cooked through, 6-8 min.",
+      "Toss pasta with chicken, bacon, ranch, and cheese."
+    ]
+  },
+  {
+    "name": "Sausage & Peppers Pasta Bake",
+    "cat": "dinner",
+    "cal": 1000,
+    "pro": "pork",
+    "ing": [
+      [
+        5,
+        "oz",
+        "Italian sausage"
+      ],
+      [
+        3,
+        "oz",
+        "penne"
+      ],
+      [
+        0.75,
+        "cup",
+        "marinara"
+      ],
+      [
+        1,
+        "",
+        "bell pepper"
+      ],
+      [
+        0.5,
+        "cup",
+        "mozzarella"
+      ]
+    ],
+    "st": [
+      "Heat oven to 375°F; cook pasta 2 min shy of package time.",
+      "Brown sausage with sliced pepper.",
+      "Mix with marinara and pasta in a baking dish; top with mozzarella.",
+      "Bake 15 min until bubbly."
+    ]
+  },
+  {
+    "name": "Seared Scallops & Rice",
+    "cat": "dinner",
+    "cal": 680,
+    "pro": "seafood",
+    "ing": [
+      [
+        6,
+        "oz",
+        "sea scallops"
+      ],
+      [
+        0.75,
+        "cup",
+        "jasmine rice"
+      ],
+      [
+        1,
+        "tbsp",
+        "butter"
+      ],
+      [
+        2,
+        "clove",
+        "garlic"
+      ],
+      [
+        0.5,
+        "",
+        "lemon"
+      ]
+    ],
+    "st": [
+      "Cook rice.",
+      "Pat scallops dry; sear in butter 2 min per side until golden.",
+      "Add minced garlic in the last 30 seconds.",
+      "Serve over rice with a squeeze of lemon."
+    ]
+  },
+  {
+    "name": "Baked Cod & Veggies",
+    "cat": "dinner",
+    "cal": 620,
+    "pro": "seafood",
+    "ing": [
+      [
+        6,
+        "oz",
+        "cod fillets"
+      ],
+      [
+        0.5,
+        "lb",
+        "baby potatoes"
+      ],
+      [
+        1,
+        "cup",
+        "green beans"
+      ],
+      [
+        1,
+        "tbsp",
+        "olive oil"
+      ],
+      [
+        0.5,
+        "",
+        "lemon"
+      ]
+    ],
+    "st": [
+      "Heat oven to 400°F; toss potatoes with oil and roast 15 min.",
+      "Add cod and green beans; roast 12-15 min more until fish flakes easily.",
+      "Finish with a squeeze of lemon."
+    ]
+  },
+  {
+    "name": "Salmon Patties & Veggies",
+    "cat": "dinner",
+    "cal": 700,
+    "pro": "seafood",
+    "ing": [
+      [
+        2,
+        "can",
+        "salmon"
+      ],
+      [
+        1,
+        "",
+        "egg"
+      ],
+      [
+        0.25,
+        "cup",
+        "breadcrumbs"
+      ],
+      [
+        1,
+        "cup",
+        "frozen broccoli"
+      ],
+      [
+        1,
+        "tbsp",
+        "butter"
+      ]
+    ],
+    "st": [
+      "Mix salmon, egg, and breadcrumbs; form into patties.",
+      "Pan-fry in butter 3-4 min per side until golden.",
+      "Steam broccoli and serve alongside."
+    ]
+  },
+  {
+    "name": "Shrimp Scampi",
+    "cat": "dinner",
+    "cal": 750,
+    "pro": "seafood",
+    "ing": [
+      [
+        6,
+        "oz",
+        "shrimp"
+      ],
+      [
+        3,
+        "oz",
+        "spaghetti"
+      ],
+      [
+        2,
+        "tbsp",
+        "butter"
+      ],
+      [
+        3,
+        "clove",
+        "garlic"
+      ],
+      [
+        0.5,
+        "",
+        "lemon"
+      ]
+    ],
+    "st": [
+      "Cook spaghetti.",
+      "Sauté shrimp in butter and garlic 2-3 min per side until pink.",
+      "Toss with pasta and a squeeze of lemon."
+    ]
+  },
+  {
+    "name": "Loaded Veggie Frittata",
+    "cat": "dinner",
+    "cal": 620,
+    "pro": "eggs & dairy",
+    "ing": [
+      [
+        5,
+        "",
+        "eggs"
+      ],
+      [
+        1,
+        "cup",
+        "spinach"
+      ],
+      [
+        0.5,
+        "",
+        "bell pepper"
+      ],
+      [
+        0.25,
+        "cup",
+        "shredded cheese"
+      ],
+      [
+        2,
+        "tbsp",
+        "milk"
+      ]
+    ],
+    "st": [
+      "Heat oven to 375°F.",
+      "Whisk eggs with milk; stir in spinach, pepper, and cheese.",
+      "Pour into a greased oven-safe skillet.",
+      "Bake 18-20 min until set."
+    ]
+  },
+  {
+    "name": "Ham & Cheese Quiche",
+    "cat": "dinner",
+    "cal": 700,
+    "pro": "pork",
+    "ing": [
+      [
+        1,
+        "",
+        "pie crust"
+      ],
+      [
+        4,
+        "",
+        "eggs"
+      ],
+      [
+        3,
+        "oz",
+        "diced ham"
+      ],
+      [
+        0.5,
+        "cup",
+        "shredded Swiss"
+      ],
+      [
+        0.5,
+        "cup",
+        "milk"
+      ]
+    ],
+    "st": [
+      "Heat oven to 375°F.",
+      "Whisk eggs and milk; stir in ham and cheese.",
+      "Pour into the pie crust.",
+      "Bake 35-40 min until set."
+    ]
+  },
+  {
+    "name": "Turkey & Cheese Roll-Ups",
+    "cat": "snack",
+    "cal": 220,
+    "pro": "turkey",
+    "ing": [
+      [
+        3,
+        "oz",
+        "deli turkey"
+      ],
+      [
+        1,
+        "slice",
+        "cheddar"
+      ]
+    ],
+    "st": [
+      "Lay out turkey slices; top each with a piece of cheese.",
+      "Roll tightly; slice into pinwheels if desired."
+    ]
+  },
+  {
+    "name": "Chicken Salad Lettuce Cups",
+    "cat": "snack",
+    "cal": 240,
+    "pro": "chicken",
+    "ing": [
+      [
+        3,
+        "oz",
+        "rotisserie chicken"
+      ],
+      [
+        1,
+        "tbsp",
+        "mayo"
+      ],
+      [
+        1,
+        "",
+        "celery stalk"
+      ],
+      [
+        3,
+        "",
+        "lettuce leaves"
+      ]
+    ],
+    "st": [
+      "Mix shredded chicken with mayo and diced celery.",
+      "Spoon into lettuce cups."
+    ]
+  },
+  {
+    "name": "Tuna Packet + Crackers",
+    "cat": "snack",
+    "cal": 210,
+    "pro": "seafood",
+    "ing": [
+      [
+        1,
+        "",
+        "tuna packet"
+      ],
+      [
+        6,
+        "",
+        "whole grain crackers"
+      ]
+    ],
+    "st": [
+      "Open the tuna packet and eat with crackers."
+    ]
+  },
+  {
+    "name": "Buffalo Chicken Bites",
+    "cat": "snack",
+    "cal": 260,
+    "pro": "chicken",
+    "ing": [
+      [
+        3,
+        "oz",
+        "rotisserie chicken"
+      ],
+      [
+        1.5,
+        "tbsp",
+        "buffalo sauce"
+      ],
+      [
+        1,
+        "cup",
+        "celery sticks"
+      ]
+    ],
+    "st": [
+      "Toss shredded chicken in buffalo sauce; warm if desired.",
+      "Serve with celery sticks."
+    ]
   }
 ]
